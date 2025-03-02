@@ -4,7 +4,7 @@
     <head>
     <meta charset="utf-8">
     <meta content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no, viewport-fit=cover" name="viewport" />
-    <meta name="description" content="" />
+    <meta name="description" content="杂事一二" />
     <meta name="hexo-theme-A4" content="v1.9.7" />
     <link rel="alternate icon" type="image/webp" href="/img/dfx.webp">
     <title>东方晓的博客 | 欢迎光顾我的博客</title>
@@ -168,7 +168,15 @@
         
             
         
-        
+        <div class=".article-gallery"><h2 id="本文用于记录一些日常生活"><a href="#本文用于记录一些日常生活" class="headerlink" title="本文用于记录一些日常生活"></a>本文用于记录一些日常生活</h2><p>​    最近真是太忙了，今天是周五，上了一天的课，明天调休还是周五的课，线代要明天上完课才到明天才到进度。</p>
+<p>​    真就是红场阅兵啊，明天上完课后天考试，还把及格线提到了70分，哎，what can i say，i am out。还有一大堆作业的ddl，以及周一还有一次考试，这一周已经有5场考试了，学是真不想学，太痛苦了，再加上学又学不会，无敌了属于是，debuff叠满了。下周还有大物的考试，部门活动的任务在这几天内也要完成，真的是废废以废废了。</p>
+<p>  最后敲一点代码吧，也算是走点正题</p>
+<figure class="highlight c++"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br></pre></td><td class="code"><pre><span class="line"><span class="meta">#<span class="keyword">include</span><span class="string">&lt;iostearm&gt;</span></span></span><br><span class="line"><span class="keyword">using</span> <span class="keyword">namespace</span> std;</span><br><span class="line"><span class="keyword">class</span> <span class="title class_">Base</span>&#123;</span><br><span class="line">	<span class="keyword">public</span>:</span><br><span class="line">    	<span class="function"><span class="keyword">virtual</span> <span class="type">void</span> <span class="title">fun</span><span class="params">()</span></span>&#123;</span><br><span class="line">			cout&lt;&lt;<span class="string">&quot;from Base&quot;</span>&lt;&lt;endl;</span><br><span class="line">        &#125;</span><br><span class="line">&#125;;</span><br><span class="line"></span><br><span class="line"><span class="keyword">class</span> <span class="title class_">Derived</span>:<span class="keyword">public</span> Base&#123;</span><br><span class="line">	<span class="keyword">private</span>:</span><br><span class="line">		<span class="function"><span class="type">void</span> <span class="title">fun</span><span class="params">()</span></span>&#123;</span><br><span class="line">			cout&lt;&lt;<span class="string">&quot;from Deruved&quot;</span>&lt;&lt;endl;</span><br><span class="line">        &#125;</span><br><span class="line">&#125;;</span><br><span class="line"></span><br><span class="line"><span class="function"><span class="type">int</span> <span class="title">main</span><span class="params">()</span></span>&#123;</span><br><span class="line">	Derived a;</span><br><span class="line">    Base *p=&amp;a;</span><br><span class="line">    p-&gt;<span class="built_in">fun</span>();</span><br><span class="line">    <span class="keyword">return</span> <span class="number">0</span>;</span><br><span class="line">&#125;</span><br><span class="line"></span><br></pre></td></tr></table></figure>
+
+<p>  简单描述一下，这串代码的意思是通过虚函数可以绕过访问的限制，调用到Derived类中的私有成员函数fun；</p>
+<p>  并且由于基类中已经声明了fun为虚函数，所以派生类中即使没有对fun进行virtual声明，它仍为虚函数实现多态。</p>
+<p>代码运行结果：</p>
+<a href="D:\GameDownload\MyBolg\source\_posts\image\512.png" class="gallery-item" style="box-shadow: none;"> <img src="D:\GameDownload\MyBolg\source\_posts\image\512.png" style="zoom: 67%;" /></a></div>
     </div>
 
     <div class="post-meta">
@@ -184,12 +192,7 @@
     
             <div class="post-footer-pre-next">
                 
-                    <span>上一篇：<a href='/'></a></span>
-                
 
-                
-                    <span class="post-footer-pre-next-last-span-right">下一篇：<a href="/"></a>
-                    </span>
                 
             </div>
     
