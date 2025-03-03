@@ -6,7 +6,7 @@
     <meta content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no, viewport-fit=cover" name="viewport" />
     <meta name="description" content="" />
     <meta name="hexo-theme-A4" content="v1.9.7" />
-    <link rel="alternate icon" type="image/webp" href="/img/dfx.webp">
+    <link rel="alternate icon" type="image/webp" href="/img/dfx.jpg">
     <title>东方晓的博客 | 欢迎光顾我的博客</title>
 
     
@@ -50,10 +50,6 @@
     
 
     
-        
-<link rel="stylesheet" href="/css/returnToLastPage.css">
-
-    
     
    
 <link rel="stylesheet" href="/css/lightgallery-bundle.min.css">
@@ -74,7 +70,181 @@
     
 
     
+    <style>
+        :root {
+            --waline-theme-color: #9e5345; 
+            --waline-color: #9e5345; 
+            --waline-border-color: #9e5345; 
+            --waline-white: #9e5345; 
+            --waline-bgcolor-light: #efeae2;  
+        }
+        body {
+            color: #9e5345;
+            background: #e8e0c9;
+        }
+        .post-md code {
+            background: #e8e0c9;
+            color: #2e5041; 
+        }
+        .post-md pre, .post-md .highlight {
+            background: #e8e0c9;
+            color: #2e5041; 
+        }
+        pre .string, pre .value, pre .inheritance, pre .header, pre .ruby .symbol, pre .xml .cdata {
+            color: #9e5345;
+        }
+        pre .number, pre .preprocessor, pre .built_in, pre .literal, pre .params, pre .constant {
+            color: #9e5345;
+        }
+        .year-font-color {
+            color: #9e5345 !important;
+        }
+        .wl-card span.wl-nick {
+            color: #9e5345; 
+        }
+        .wl-card .wl-badge {
+            border: 1px solid #9e5345;
+            color: #9e5345; 
+        }
+        .wl-btn {
+            border: 1px solid #9e5345; 
+            color:  #9e5345;  
+        }
+        .wl-btn.primary {
+            color: #efeae2; 
+        }
+        .wl-header label {
+            color: #9e5345;
+        }
+        a {
+            color: #2e5041;
+        }
+
+        .post-md a {
+            color: #2e5041;
+        }
+
+        .nav li a {
+            color: #2e5041;
+        }
+
+        .archive-main a:link {
+            color: #2e5041;
+        }
+        .archive-main a:visited {
+            color: #9c9caf; 
+        }
+
+        .archive li span {
+            color: #9e5345;
+        }
+
+        .post-main-title {
+            color: #9e5345;
+        }
+
+        .post-md h1,
+        .post-md h2,
+        .post-md h3,
+        .post-md h4,
+        .post-md h5,
+        .post-md h6 {
+            color: #9e5345;
+        }
+
+        [data-waline] p {
+            color: #9e5345;
+        }
+        [data-waline] a {
+            color: #9e5345;
+        } 
+        .wl-sort li.active {
+            color: #9e5345;
+        }
+
+        .wl-card .wl-meta>span {
+            background: #efeae2;
+        }
+
+        .paper {
+            background: #e8e0c9;
+        }
+
+        .index-main {
+            background: #efeae2;
+        }
+
+        .paper-main {
+            background: #efeae2;
+        }
+
+        .wl-panel {
+            background: #efeae2;
+        }
+
+        .archive li:nth-child(odd) {
+            background: #efeae2;
+            ;
+        }
+
+        .archive li:nth-child(even) {
+            background: #efeae2;
+        }
+
+        .post-md table tr:nth-child(odd) td {
+            background: #efeae2;
+        }
+
+        .post-md table tr:nth-child(even) td {
+            background: #efeae2;
+        }
+
     
+        .progress-wrap::after {
+            color: #9e5345; /* 箭头的颜色 */
+        }
+        .progress-wrap svg.progress-circle path {
+	        stroke: #9e5345; /* 边框的颜色 */
+        }
+        .progress-wrap::before {
+	        background-image: linear-gradient(298deg, #2e5041, #2e5041); /* 鼠标滑过的箭头颜色 */
+         }
+
+        .return-to-last-progress-wrap::after {
+            color: #9e5345; /* 箭头的颜色 */
+        }
+        .return-to-last-progress-wrap svg.progress-circle path {
+	        stroke: #9e5345; /* 边框的颜色 */
+        }
+        .return-to-last-progress-wrap::before {
+	        background-image: linear-gradient(298deg, #2e5041, #2e5041); /* 鼠标滑过的箭头颜色 */
+         }
+
+         .left-toc-container::-webkit-scrollbar-thumb {
+            background-color: #9e5345; /* 设置滚动条拖动块的颜色 */
+        }
+
+        .bs-docs-sidebar .nav>.active>a,
+        .bs-docs-sidebar .nav>li>a:hover,
+        .bs-docs-sidebar .nav>li>a:focus {
+            color: #2e5041;
+            border-left-color: #2e5041;
+        }
+        .bs-docs-sidebar .nav>li>a {
+            color:  #9e5345;
+        }
+    </style>
+
+    
+    <style>
+        body{
+            background-image: url(/img/background.jpg);
+        }
+        .paper {
+            background-image: url(/img/background.jpg);
+        }  
+    </style>
+
     
     <body>
         <script src="/js/darkmode-js.min.js"></script>
@@ -86,7 +256,7 @@
                 left: '42px', // default: 'unset'
                 time: '0.3s', // default: '0.3s'
                 mixColor: '#fff', // default: '#fff'
-                backgroundColor: ' #e4e4e4 ',  // default: '#fff'
+                backgroundColor: ' #e8e0c9  ',  // default: '#fff'
                 buttonColorDark: '#100f2c',  // default: '#100f2c'
                 buttonColorLight: '#fff', // default: '#fff'
                 saveInCookies: true, // default: true,
@@ -111,6 +281,23 @@
                     <!-- 这个header就是特指index的头部 -->
 
 
+    <div class="index-header-line" >
+        
+            <div id="hiddenHeaderContentArray" style="display: none;">
+                
+                
+                
+                    <span>我忘明月很久，明月始终望我</span>
+                
+                    <span>人山人海，人来人往</span>
+                
+                    <span>看过大海的人不会忘记海的广阔</span>
+                
+            </div>
+            <span id="targetSpan"></span>
+        
+    </div>
+
 
     <div style="text-align: left;">
 
@@ -125,6 +312,14 @@
                     &nbsp / &nbsp<a href="/list/">文章</a>
                 
             
+                
+                    &nbsp / &nbsp<a href="/tags/">标签</a>
+                
+            
+                
+                    &nbsp / &nbsp<a href="/categories/">分类</a>
+                
+            
         </div>
     </div>
 
@@ -132,8 +327,20 @@
     
     
        
+       
             <div class="post-md">
-                <div class=".article-gallery"><p>1111111111111test11111111111</p>
+                <div class=".article-gallery"><p>大家好，我是东方晓，一位热衷于探索个人成长和自我提升的生活方式爱好者。在这个博客中，我将与大家分享我在这条成长之路上的心得与经验，包括心理健康、生产力提升、旅行故事，以及一些日常生活的小技巧。我相信每一个人都可以通过一点点努力，成为更好的自己。</p>
+<h2 id="我的博客主题："><a href="#我的博客主题：" class="headerlink" title="我的博客主题："></a>我的博客主题：</h2><ul>
+<li><strong>个人随笔</strong>：分享自我提升的书单、心态调整以及成长的心路历程。</li>
+<li><strong>生活方式</strong>：从简约生活到时间管理，如何打造一个更高效、愉悦的生活环境。</li>
+<li><strong>旅行故事</strong>：记录我在旅行中遇到的人和事，分享一些值得一去的地方。</li>
+<li><strong>专业知识：</strong>一些日常时不时灵光一闪的奇思妙想。</li>
+</ul>
+<h2 id="为什么你应该继续阅读？"><a href="#为什么你应该继续阅读？" class="headerlink" title="为什么你应该继续阅读？"></a>为什么你应该继续阅读？</h2><p>如果你正在寻找一些关于如何提升自己、如何过上更有意义生活的灵感，那么你来对地方了！这个博客不仅仅是我的成长记录，它也致力于帮助你发掘生活中的无限可能。</p>
+<h2 id="推荐文章："><a href="#推荐文章：" class="headerlink" title="推荐文章："></a>推荐文章：</h2><ul>
+<li>还在开发中……</li>
+</ul>
+<h2 id="让我们互动！"><a href="#让我们互动！" class="headerlink" title="让我们互动！"></a>让我们互动！</h2><p>我非常欢迎你在评论区留下你的想法，或者通过[社交媒体链接]与我联系。无论你有什么问题或想法，记得和我分享！</p>
 </div>
             </div>
     
@@ -148,13 +355,6 @@
         <span>本站总字数：2.6k</span>
         
         
-            <div class="footer-last-span-right">
-        
-        
-                <span id="busuanzi_container_site_pv" class="">
-                    本站总访问：<span id="busuanzi_value_site_pv"></span>次
-                </span>
-            </div>
         
     </div>
 
@@ -264,13 +464,6 @@
                     </svg>
                 </div>
             
-            
-                <!-- 返回的按钮-->  
-                <div class="return-to-last-progress-wrap shadow-drop-2-bottom">
-                    <svg class="progress-circle svg-content" width="100%" height="100%" viewBox="-1 -1 102 102">
-                        <path d="M50,1 a49,49 0 0,1 0,98 a49,49 0 0,1 0,-98"/>
-                    </svg>
-                </div>
             
     </body>
 </html>

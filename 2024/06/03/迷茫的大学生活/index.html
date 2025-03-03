@@ -6,7 +6,7 @@
     <meta content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no, viewport-fit=cover" name="viewport" />
     <meta name="description" content="随笔" />
     <meta name="hexo-theme-A4" content="v1.9.7" />
-    <link rel="alternate icon" type="image/webp" href="/img/dfx.webp">
+    <link rel="alternate icon" type="image/webp" href="/img/dfx.jpg">
     <title>东方晓的博客 | 欢迎光顾我的博客</title>
 
     
@@ -50,10 +50,6 @@
     
 
     
-        
-<link rel="stylesheet" href="/css/returnToLastPage.css">
-
-    
     
    
 <link rel="stylesheet" href="/css/lightgallery-bundle.min.css">
@@ -74,7 +70,181 @@
     
 
     
+    <style>
+        :root {
+            --waline-theme-color: #9e5345; 
+            --waline-color: #9e5345; 
+            --waline-border-color: #9e5345; 
+            --waline-white: #9e5345; 
+            --waline-bgcolor-light: #efeae2;  
+        }
+        body {
+            color: #9e5345;
+            background: #e8e0c9;
+        }
+        .post-md code {
+            background: #e8e0c9;
+            color: #2e5041; 
+        }
+        .post-md pre, .post-md .highlight {
+            background: #e8e0c9;
+            color: #2e5041; 
+        }
+        pre .string, pre .value, pre .inheritance, pre .header, pre .ruby .symbol, pre .xml .cdata {
+            color: #9e5345;
+        }
+        pre .number, pre .preprocessor, pre .built_in, pre .literal, pre .params, pre .constant {
+            color: #9e5345;
+        }
+        .year-font-color {
+            color: #9e5345 !important;
+        }
+        .wl-card span.wl-nick {
+            color: #9e5345; 
+        }
+        .wl-card .wl-badge {
+            border: 1px solid #9e5345;
+            color: #9e5345; 
+        }
+        .wl-btn {
+            border: 1px solid #9e5345; 
+            color:  #9e5345;  
+        }
+        .wl-btn.primary {
+            color: #efeae2; 
+        }
+        .wl-header label {
+            color: #9e5345;
+        }
+        a {
+            color: #2e5041;
+        }
+
+        .post-md a {
+            color: #2e5041;
+        }
+
+        .nav li a {
+            color: #2e5041;
+        }
+
+        .archive-main a:link {
+            color: #2e5041;
+        }
+        .archive-main a:visited {
+            color: #9c9caf; 
+        }
+
+        .archive li span {
+            color: #9e5345;
+        }
+
+        .post-main-title {
+            color: #9e5345;
+        }
+
+        .post-md h1,
+        .post-md h2,
+        .post-md h3,
+        .post-md h4,
+        .post-md h5,
+        .post-md h6 {
+            color: #9e5345;
+        }
+
+        [data-waline] p {
+            color: #9e5345;
+        }
+        [data-waline] a {
+            color: #9e5345;
+        } 
+        .wl-sort li.active {
+            color: #9e5345;
+        }
+
+        .wl-card .wl-meta>span {
+            background: #efeae2;
+        }
+
+        .paper {
+            background: #e8e0c9;
+        }
+
+        .index-main {
+            background: #efeae2;
+        }
+
+        .paper-main {
+            background: #efeae2;
+        }
+
+        .wl-panel {
+            background: #efeae2;
+        }
+
+        .archive li:nth-child(odd) {
+            background: #efeae2;
+            ;
+        }
+
+        .archive li:nth-child(even) {
+            background: #efeae2;
+        }
+
+        .post-md table tr:nth-child(odd) td {
+            background: #efeae2;
+        }
+
+        .post-md table tr:nth-child(even) td {
+            background: #efeae2;
+        }
+
     
+        .progress-wrap::after {
+            color: #9e5345; /* 箭头的颜色 */
+        }
+        .progress-wrap svg.progress-circle path {
+	        stroke: #9e5345; /* 边框的颜色 */
+        }
+        .progress-wrap::before {
+	        background-image: linear-gradient(298deg, #2e5041, #2e5041); /* 鼠标滑过的箭头颜色 */
+         }
+
+        .return-to-last-progress-wrap::after {
+            color: #9e5345; /* 箭头的颜色 */
+        }
+        .return-to-last-progress-wrap svg.progress-circle path {
+	        stroke: #9e5345; /* 边框的颜色 */
+        }
+        .return-to-last-progress-wrap::before {
+	        background-image: linear-gradient(298deg, #2e5041, #2e5041); /* 鼠标滑过的箭头颜色 */
+         }
+
+         .left-toc-container::-webkit-scrollbar-thumb {
+            background-color: #9e5345; /* 设置滚动条拖动块的颜色 */
+        }
+
+        .bs-docs-sidebar .nav>.active>a,
+        .bs-docs-sidebar .nav>li>a:hover,
+        .bs-docs-sidebar .nav>li>a:focus {
+            color: #2e5041;
+            border-left-color: #2e5041;
+        }
+        .bs-docs-sidebar .nav>li>a {
+            color:  #9e5345;
+        }
+    </style>
+
+    
+    <style>
+        body{
+            background-image: url(/img/background.jpg);
+        }
+        .paper {
+            background-image: url(/img/background.jpg);
+        }  
+    </style>
+
     
     <body>
         <script src="/js/darkmode-js.min.js"></script>
@@ -86,7 +256,7 @@
                 left: '42px', // default: 'unset'
                 time: '0.3s', // default: '0.3s'
                 mixColor: '#fff', // default: '#fff'
-                backgroundColor: ' #e4e4e4 ',  // default: '#fff'
+                backgroundColor: ' #e8e0c9  ',  // default: '#fff'
                 buttonColorDark: '#100f2c',  // default: '#100f2c'
                 buttonColorLight: '#fff', // default: '#fff'
                 saveInCookies: true, // default: true,
@@ -119,7 +289,19 @@
                 height: auto;
                 object-fit: cover; /* 保持图片比例 */
                 transition: transform 0.3s ease-in-out; 
-                border-radius: 0; 
+                border-radius: 50%; 
+            }
+            
+            .header-img:hover {
+                animation: rotateAnimation 2s linear infinite; /* 悬停旋转动画 */
+            }
+            @keyframes rotateAnimation {
+                0% {
+                    transform: rotate(0deg);
+                }
+                100% {
+                    transform: rotate(360deg);
+                }
             }
             
         </style>
@@ -127,7 +309,7 @@
             alt="^-^" 
             cache-control="max-age=86400" 
             class="header-img" 
-            src="/img/dfx.webp" 
+            src="/img/dfx.jpg" 
         />
         <div class="header-content">
             <a class="logo" href="/">东方晓的博客</a> 
@@ -144,6 +326,14 @@
         
             
                 <li><a href="/list/">文章</a></li>
+            
+        
+            
+                <li><a href="/tags/">标签</a></li>
+            
+        
+            
+                <li><a href="/categories/">分类</a></li>
             
         
     </ul>
@@ -177,7 +367,7 @@
             <div class="post-head-meta-center">
         
                 
-                    <span>最近更新：2024-06-03</span> 
+                    <span>最近更新：2025-03-03</span> 
                 
                 
                     
@@ -205,11 +395,12 @@
     <div class="post-md">
         
             
-                <ol class="post-toc"><li class="post-toc-item post-toc-level-1"><a class="post-toc-link" href="#%E9%9A%8F%E7%AC%94"><span class="post-toc-text">随笔</span></a><ol class="post-toc-child"><li class="post-toc-item post-toc-level-4"><a class="post-toc-link" href="#%E3%80%90%E8%BF%99%E4%B8%8D%E5%B0%B1%E6%98%AF%E4%BD%A0%E5%A4%A7%E5%AD%A6%E7%9A%84%E5%9B%9B%E5%B9%B4%E5%90%97%EF%BC%9F%E5%B9%B3%E5%BA%B8%EF%BC%8C%E6%80%AF%E6%87%A6%EF%BC%8C%E6%82%94%E6%81%A8%EF%BC%8C%E9%81%97%E6%86%BE%E3%80%82-%E5%93%94%E5%93%A9%E5%93%94%E5%93%A9%E3%80%91"><span class="post-toc-text">【这不就是你大学的四年吗？平庸，怯懦，悔恨，遗憾。-哔哩哔哩】</span></a></li></ol></li></ol></li></ol></li></ol>
+                
             
         
-        <div class=".article-gallery"><h1 id="随笔"><a href="#随笔" class="headerlink" title="随笔"></a>随笔</h1><p>​		最近也是快要期末周了，但我仍然还是老样子，并没有因此而更加努力，今天晚上在刷了一晚上的B站后，我不禁开始思考大学究竟应该怎么度过，其实也不是第一次思考这个问题，这几天一直在思考。而这一切要从几天前的一个视频开始说起：</p>
-<h4 id="【这不就是你大学的四年吗？平庸，怯懦，悔恨，遗憾。-哔哩哔哩】"><a href="#【这不就是你大学的四年吗？平庸，怯懦，悔恨，遗憾。-哔哩哔哩】" class="headerlink" title="【这不就是你大学的四年吗？平庸，怯懦，悔恨，遗憾。-哔哩哔哩】"></a><a target="_blank" rel="noopener" href="https://b23.tv/zlFH2gn">【这不就是你大学的四年吗？平庸，怯懦，悔恨，遗憾。-哔哩哔哩】</a></h4><p>​		从这个视频中我思考到我的大学生活很有可能就是这样，平庸，怯懦，悔恨，遗憾。回想自己的大学时光，从大一到现在，感觉自己就在跟着大部分人的节奏走，准备考研或者准备考公，好像所有人都不想在毕业后直接工作，连老师也建议我们考研，可我们考研又能做什么呢？难道和这十几年一样，继续夜以继日的学习？也许他们的确是这么想的，追求更高的学位，取得更大的成功。但我并不这么想，我想挣钱，挣足够多的钱，然后就想去做自己想做的事。可能这是小时候的我所期待的——期待长大，没有约束，自由自在，世界的美好等待我们的探索。</p>
+        <div class=".article-gallery"><p>​		最近也是快要期末周了，但我仍然还是老样子，并没有因此而更加努力，今天晚上在刷了一晚上的B站后，我不禁开始思考大学究竟应该怎么度过，其实也不是第一次思考这个问题，这几天一直在思考。而这一切要从几天前的一个视频开始说起：</p>
+<p><a target="_blank" rel="noopener" href="https://b23.tv/zlFH2gn">【这不就是你大学的四年吗？平庸，怯懦，悔恨，遗憾。-哔哩哔哩】</a></p>
+<p>​		从这个视频中我思考到我的大学生活很有可能就是这样，平庸，怯懦，悔恨，遗憾。回想自己的大学时光，从大一到现在，感觉自己就在跟着大部分人的节奏走，准备考研或者准备考公，好像所有人都不想在毕业后直接工作，连老师也建议我们考研，可我们考研又能做什么呢？难道和这十几年一样，继续夜以继日的学习？也许他们的确是这么想的，追求更高的学位，取得更大的成功。但我并不这么想，我想挣钱，挣足够多的钱，然后就想去做自己想做的事。可能这是小时候的我所期待的——期待长大，没有约束，自由自在，世界的美好等待我们的探索。</p>
 <p>​		但时过境迁，转眼间我成大学生了。渐渐地，我开始理解为什么大人总是那么忙，正如那歌词中所唱的那样：看世人慌慌张张，却只为那碎银几量，可偏偏这碎银几两，可解世人的迷惘。前几天我跟我们专业科老师聊天，询问未来要怎么走才更好，她也觉得考研要好一点，并问我排名怎么样啊什么的。我作为一个中等生，彻头彻尾的中等生，深知自己不可能会被保研。但有一点值得庆幸，那就是我身上有一项闪光点——不论结果如何，我都想要全力以赴（也许是高考后遗症吧，哈哈），并因此常常和一起做项目的同学发生争执，他们认为如果这个项目做好后拿不到好的名次，不如不做，我觉得这样也没错，没必要在不会结果的树下等待。但我的内心一直有个声音，那就是 just try it.做自己喜欢的事，不必考虑名次啊什么的。毕竟如果未来的我回想大学的这一段时光，不想让回忆里的自己每天除了学习就是搞比赛，要么就是打游戏刷视频。我想过得不一样一点，想让自己的生活变得热烈而奔放。</p>
 <p>​		但我知道，这不过是我最后的一丝幻想罢了。没有成绩，一切皆为免谈。我必须得不停地学习，广泛地学习，不然就会被淘汰，这是内卷。当然，我对我有着清醒的认知，我绝不会成为佼佼者，因为我自身的惰性和大脑的钝性，造就我必须比别人努力得更多才可以和他们齐平。有时甚至连他们的背影都看不到，索性摆烂。我当然知道摆烂不可取。但没有人会来告诉我我应该怎么办，要么就是说一些假大空的话：你要好好学习，将来考研或者考公；你要从现在开始就着手考研或考公题。但我总是因为看不清未来，准确的说我看不到考研后或考公后接下来应该怎么走，他们只是目前来看的最好选择，但未来的事情谁又能预料到呢？</p>
 <p>​		言归正传，我跟我们老师说我想毕业就工作。我们老师也没说啥，只是说那就好好学习，有一个目标总比没有要好。对了，她还说真到了那时候，你如果一手抓考研，一手抓实习是抓不过来的。前人的话我总是不懂为什么的，但这十几年的经验告诉我：听人劝，吃饱饭。</p>
@@ -231,8 +422,8 @@
                 <span>归为分类:
                     
                     
-                        <a href='/categories/%E7%94%9F%E6%B4%BB-%E9%9A%8F%E7%AC%94/'>
-                            -生活 -随笔
+                        <a href='/categories/%E7%94%9F%E6%B4%BB/'>
+                            -生活
                         </a>
                     
                 </span>
@@ -390,13 +581,6 @@
                     </svg>
                 </div>
             
-            
-                <!-- 返回的按钮-->  
-                <div class="return-to-last-progress-wrap shadow-drop-2-bottom">
-                    <svg class="progress-circle svg-content" width="100%" height="100%" viewBox="-1 -1 102 102">
-                        <path d="M50,1 a49,49 0 0,1 0,98 a49,49 0 0,1 0,-98"/>
-                    </svg>
-                </div>
             
     </body>
 </html>
